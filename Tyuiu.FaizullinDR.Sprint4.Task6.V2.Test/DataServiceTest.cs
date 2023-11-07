@@ -15,7 +15,7 @@ namespace Tyuiu.FaizullinDR.Sprint4.Task6.V2.Test
 
             string[] arr = { "red", "blue", "green", "yellow" };
 
-            string[] res = ;//ds.
+            string[] res = ds.Calculate(arr);
 
             string[] wait = { "yellow" };
 
