@@ -10,7 +10,7 @@ namespace Tyuiu.FaizullinDR.Sprint4.Task4.V16.Lib
 {
     public class DataService : ISprint4Task4V16
     {
-        public int Calculate(int[,] matrix)
+        public int[,] Calculate(int[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++)
             {

@@ -36,13 +36,7 @@ namespace Tyuiu.FaizullinDR.Sprint4.Task4.V16
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                     *");
             Console.WriteLine("****************************************************************************************");
 
-            Console.WriteLine("Введите количество строк массива");
-            int rows = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Введите количество столбцов массива");
-            int columns = Convert.ToInt32(Console.ReadLine());
-
-            int[,] arr = new int[rows, columns];
+            int[,] arr = new int[5, 5];
 
             for (int i = 0; i < arr.GetLength(0); i++)
             {
@@ -54,21 +48,17 @@ namespace Tyuiu.FaizullinDR.Sprint4.Task4.V16
             }
             Console.WriteLine();
 
-            //в либу
-
+            Console.WriteLine("Массив:");
             for (int i = 0; i < arr.GetLength(0); i++)
             {
                 for (int j = 0; j < arr.GetLength(1); j++)
                 {
-                    if (arr[i, j] % 2 == 0)
-                        arr[i, j] = 1;
+                    Console.Write(arr[i, j] + "\t");
                 }
+                Console.WriteLine();
             }
 
-            // ds.
-
-
-
+            int[,] res = ds.Calculate(arr);
 
             Console.WriteLine();
 
@@ -76,9 +66,17 @@ namespace Tyuiu.FaizullinDR.Sprint4.Task4.V16
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                           *");
             Console.WriteLine("****************************************************************************************");
 
-            
+            for (int i = 0; i < res.GetLength(0); i++)
+            {
+                for (int j = 0; j < res.GetLength(1); j++)
+                {
+                    Console.Write(res[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
 
-            
+
+
 
 
 
